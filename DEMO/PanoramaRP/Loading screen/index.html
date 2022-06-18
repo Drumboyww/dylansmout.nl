@@ -13,8 +13,8 @@
       Panorama Laad Scherm
     </title>
 
-    <meta content="" name="description">
-    <meta content="" name="author">
+    <meta content="Het Panorama Roleplay Loading Screen" name="description">
+    <meta content="Gemaakt door: Dylan Smout" name="author">
     <meta content="" name="keywords">
     <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" name="viewport">
     <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
@@ -41,12 +41,9 @@
     class="hero-fullscreen hero-bg">
       <div class="slide-YT hero-fullscreen">
         <div class="slide bg-img-YT"></div>
-  <div class="video-background">
-<video autoplay muted loop id="LaadVid">
-  <source src="Media/LaadVideo.mp4" type="video/mp4">
-</video>
-       
-   </div>
+        <div class="video-background">
+          <iframe class="videoContainer__video" height="100%" width="130%" src="https://www.youtube.com/embed/HWurFwhu09s?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0"></iframe>
+     </div>
       </div>
       <div class="preload-content"></div>
     </div>
@@ -93,12 +90,18 @@
         </div>
       </div>
     </div>
+
+<div class="Muziek">
+
+  <audio  id="Muziek" src="https://stream.radiofomix.nl/radio/8000/radio.mp3" autoplay="true" hidden="true" loop="true"></audio>
+
+</div>
+
     <div class="upper-page current"
         id="home">
-        <audio id="Muziek" src="https://stream.radiofomix.nl/radio/8000/radio.mp3" autoplay="true" hidden="true" loop="true"></audio>
 
       <div class="line-left left-position">
-        <a href="https://dylansmout.nl">Dylan.S Development</a>
+        <a href="https://fomix.nl">Je hoort nu: Radio Fomix</a>
       </div>
 
       <div class="line-right right-position">
@@ -170,7 +173,7 @@
                   //
                 </h4>
                 <h2>
-                  Règlement <span class="get-behind">Règlement</span>
+                  Regels <span class="get-behind">Panorama Roleplay</span>
                 </h2>
               </div>
 
@@ -183,56 +186,10 @@
                 <div class="row">
                   <div class="col-md-6 services-padding mb40">
                     <h5>
-                      <span class="awesome">Règlement</span>01
+                      <span class="awesome">Alle Regels</span> In De Discord!
                     </h5>
                     <p>
-                      - Règle
-					  - Règle
-					  - Règle
-					  - Règle
-					  - Règle
-					  - Règle
-                    </p>
-                  </div>
-                  <div class="col-md-6 services-padding border-left-services mb40">
-                    <h5>
-                      <span class="awesome">Règlement</span> 02
-                    </h5>
-                    <p>
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 services-padding border-top-services mt40">
-                    <h5>
-                      <span class="awesome">Règlement</span> 03
-                    </h5>
-                    <p>
-                     - Règle
-                     - Règle
-                     - Règle
-                     - Règle
-                     - Règle
-                     - Règle
-                    </p>
-                  </div>
-                  <div class="col-md-6 services-padding border-left-services border-top-services mt40">
-                    <h5>
-                      <span class="awesome">Règlements</span> 01
-                    </h5>
-                    <p>
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
-                      - Règle
+                      Al onze regels staan in de Discord server onder de Categorie "RegelGeving"
                     </p>
                   </div>
                 </div>
@@ -259,7 +216,7 @@
                   //
                 </h4>
                 <h2>
-                  Crédits <span class="get-behind">Developpement</span>
+                  Socials <span class="get-behind">Panorama Roleplay</span>
                 </h2>
               </div>
 
@@ -268,14 +225,31 @@
               </div>
 
               <div class="row">
+
                 <div class="col-md-4">
                   <span class="awesome-contact"><i class="fab fa-discord"></i></span>
                   <p>
-                    Redven Biker<br>
-                    <a>Redven Biker#0415</a>
-                    <a>| Dev.<br></a>
+                    Panorama Roleplay Discord<br>
+                    <a href="https://discord.gg/PanoramaRoleplay">discord.gg/PanoramaRoleplay</a>
                   </p>
                 </div>
+
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-instagram"></i></span>
+                  <p>
+                    Panorama Roleplay Instagram<br>
+                    <a href="https://www.instagram.com/panoramaroleplay/">@PanoramaRoleplay</a>
+                  </p>
+                </div>
+
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-tiktok"></i></span>
+                  <p>
+                    Panorama Roleplay Tik-Tok<br>
+                    <a href="https://www.tiktok.com/@panoramaroleplay">@PanoramaRoleplay</a>
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
@@ -284,15 +258,32 @@
     </div>
 
     <script>
+
+window.onload = function () {
+  document.getElementById("Muziek");
+  var audio = document.querySelector('audio');
+  audio.play()
+}
+var vid = document.getElementById("Muziek");
+var audio = document.querySelector('audio');
+   var hasInit = false;
+   function playMusic()
+   {
+      if(!hasInit)
+      {
+          hasInit = true;
+          audio.play();
+      }
+   }
       var play = true;
               var vid = document.getElementById("Muziek");
               vid.volume = 0.1;
               window.addEventListener('keyup', function(e)
               {
                   if (e.which == 38){
-                      vid.volume = Math.min(vid.volume + 0.05,1);
+                      vid.volume = Math.min(vid.volume + 0.01,1);
                   } else if(e.which == 40){
-                      vid.volume = Math.max(vid.volume - 0.05,0);
+                      vid.volume = Math.max(vid.volume - 0.01,0);
                   };
               });
       

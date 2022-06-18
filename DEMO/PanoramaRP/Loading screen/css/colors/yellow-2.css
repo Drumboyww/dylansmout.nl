@@ -1,23 +1,23 @@
 @charset "utf-8";
 
 a {
-color: #EA2027;
+color: #58bf9d;
 }
 
 p a {
-color: #EA2027;
+color: #58bf9d;
 }
 
 #main-menu {
-background: #EA2027;
+background: #58bf9d;
 }
 
 .color-me {
-color: #EA2027;
+color: #58bf9d;
 }
 
 .awesome {
-color: #EA2027;
+color: #ffffff;
 }
 
 @-webkit-keyframes glow {

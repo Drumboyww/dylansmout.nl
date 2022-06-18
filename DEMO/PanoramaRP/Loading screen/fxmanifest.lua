@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 games { 'gta5' }
 
-author 'Redven Biker (XLife.fr)'
-description 'Discord : https://discord.gg/C3aN2bBVbB'
-version '1.0.0'
+author 'Dylan Smout'
+description 'DylanS Development | https://dylansmout.nl'
+version '1.2.0'
 
 loadscreen 'index.html'
 loadscreen_manual_shutdown 'yes'
@@ -11,7 +11,7 @@ client_script 'client.lua'
 
 files {
     'index.html',
-    'music/music.mp3',
+    'Media/LaadVideo.mp4',
     'css/bootstrap.min.css',
     'css/css.css',
     'css/fontawesome-all.min.css',
